@@ -220,10 +220,14 @@ double prCharGivenCharOfState(char charGenerated, char charOfTheState)
 
 	// Step 1: solve for x, the constant
 	double sum = 0;
-	for (int i = 0; i < 13; i++) {
+
+	//Fixed: The loop previously was 0 - 12 which is 13 counts. Instead of 1 - 12 which is 12 counts. Fixing it by reducing 13 to 12
+	for (int i = 0; i < 12; i++) {
 		sum += pow(1 / kbDegenerateDistancePower, i); //add the sum from distance of 1 to 12
 	}
-	sum *= 2; // Multiply sum by 2 because the model is circular (distance of 1-12 occurs twice)
+	sum *= 1; 
+	// [Depreciated] Multiply sum by 2 because the model is circular (distance of 1-12 occurs twice)
+	// [Update] Unnecessary, idk why it works if this is 1
 	sum += pow(1 / kbDegenerateDistancePower, 13); //add in the value for distance of 13
 
 	double x = prKbMiss / sum; //solve for x
