@@ -1,0 +1,24 @@
+void getPrTableForPossibleInitialStates(double prTable[], int sizeOfTable)
+{
+	//It is a word of sizeOfTable characters:
+	//     i.e. the number of character states is sizeOfTable.
+	//     let's index these characters from 0 to sizeOfTable-1.
+
+
+	// STEP 1 - calculate scaling factor to determine probabilites of going from I to each character.
+	
+	// Declare a scaling factor k. The scaling factor changes depending on word length (represented by n).
+	// The scaling factor k is equal to 1.0 / (1 + 1/2 + 1/4 ... + 1/(2^(n-1))). k should be less than 1.
+
+
+
+	// STEP 2 - calculate probability of going from I to each character.
+
+	// k also happens to be the probability of going from I to the first character.
+	// So to calculate the probability of going from I to each character, multiply the position by k.
+	// For example, the probability of going from I to the second character is 2 * k, and the 
+	// probability of going from I to the third character is 3 * k.
+
+
+
+}
