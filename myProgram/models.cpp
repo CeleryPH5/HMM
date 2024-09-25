@@ -274,6 +274,13 @@ void getPrTableForPossibleInitialStates(double prTable[], int sizeOfTable)
 	//Replace the following with your own implementation
 	//**************************************************
 
+	double total_sum = 0;
+	for (int i = 0; i < sizeOfTable; i++) {
+		total_sum += pow(2, i + 1);
+	}
+	for (int j = 0; j < sizeOfTable; j++) {
+		prTable[abs(j - sizeOfTable) - 1] = pow(2, j + 1) / total_sum;
+	}
 }
 
 
