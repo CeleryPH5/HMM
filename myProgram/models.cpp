@@ -4,7 +4,7 @@
 #include <iostream>
 #include <fstream>
 #include <conio.h>	
-
+#include<vector>
 #include "models.h"
 
 using namespace std;
