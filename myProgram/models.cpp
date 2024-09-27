@@ -324,7 +324,22 @@ void getPrTableForPossibleNextStates
 	//**************************************************
 	//Replace the following with your own implementation
 	//**************************************************
+	double sum = 0;
+	vector<double> expDegrade(sizeOfTable);
+	for (int state = 0; state < sizeOfTable; state++)// states are used as indices
+	{
+		int distance = state - currentState;// calculates the distance between the current spelling state and a specific possible next spelling state down the stream in the word.
+		if (distance > 0 ? expDegrade[state] = pow(1 / spDegenerateTransitionDistancePower, distance) : expDegrade[state] = 0);
+		sum += expDegrade[state];
+	}
+	double x = prSpMoveOn / sum;// x is the scaling constant.
+
+	for (int i = 0; i < sizeOfTable; i++)
+	{
+		if (i != currentState ? transitionPrTable[i] = x * expDegrade[i] : transitionPrTable[i] = prSpRepeat);//populating the transition probabilty tabel with the scaling constant times the exponential degrade 
+	}
 
 }
+
 
 
