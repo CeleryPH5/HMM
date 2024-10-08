@@ -341,59 +341,6 @@ void getPrTableForPossibleNextStates
 
 }
 
-int drawSample(double probTable[], int tableSize) {
-    int idx;
-    double probSum = 0;
-    for (idx = 0; idx < tableSize; idx++)
-        probSum += probTable[idx];
-    
-    if (probSum < 0.999 || probSum > 1.001)
-        cout << "Error in sampling" << endl
-             << "Sum of probabilities: " << probSum << endl;
-
-    double cumProb = 0;
-    double* intervals = new double[tableSize];
-    for (idx = 0; idx < tableSize; idx++) {
-        cumProb += probTable[idx];
-        intervals[idx] = cumProb;
-    }
-
-    int randVal = rand() % 1001;
-    double randProb = randVal / 1000.0;
-
-    bool chosen = false;
-    for (idx = 0; idx < tableSize && !chosen; idx++) {
-        if (randProb <= intervals[idx]) {
-            delete[] intervals;
-            return idx;
-        }
-    }
-    delete[] intervals;
-    return tableSize - 1;
-}
-
-void buildProbTable(char targetChar, double probTable[]) {
-    int state = 0;
-    int numStates = 26;
-    char alpha[] = "abcdefghijklmnopqrstuvwxyz";
-    double scale = getScaleFactor(26);
-
-    for (int i = 0; i < numStates; i++) {
-        if (alpha[i] == targetChar) {
-            state = i;
-        }
-    }
-    for (int i = 0; i < 26; i++) {
-        probTable[i] = prCharGivenCharOfState(alpha[i], targetChar, scale);
-    }
-}
-
-char simulateKeyPress(char targetChar) {
-    char alphabet[] = "abcdefghijklmnopqrstuvwxyz";
-    double probTable[26];
-    buildProbTable(targetChar, probTable);
-    return alphabet[drawSample(probTable, 26)];
-}
 
 
 
