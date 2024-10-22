@@ -219,7 +219,8 @@ void main()
  		cout << "*************	Demos of the Models	*********" << endl;
 		cout<<"K. Keyboard model demo"<<endl;
 		cout<<"S. Spelling model demo"<<endl;
-		// cout<<"H. Keyboard+Spelling HMM model demo"<<endl;
+		cout << "A. Simulate Typing demo" << endl;
+		//cout<<"H. Keyboard+Spelling HMM model demo"<<endl;
 		// cout<<"P. prOf1CharSeriesObservedWhenTyping1Word(string observed, string word)"<<endl;
 		cout << endl;
 
@@ -264,14 +265,14 @@ void main()
 			endOfService("[Spelling model demo: initial-state probabilities]");
 			break;
 
-		//case 'H': case 'h'://
-		//	displayParametersSpellingModel();
-		//	displayParametersKbModel();
+		/*case 'H': case 'h':
+			displayParametersSpellingModel();
+		displayParametersKbModel();
 
-		//	cout << "[Keyboard+Spellin-> combined HMM model]:" << endl;
-		//	demoOfKeyboardPlusSpellingModels();
-		//	endOfService("[Keyboard+Spellin-> combined HMM model]");
-		//	break;
+			cout << "[Keyboard+Spellin-> combined HMM model]:" << endl;
+		demoOfKeyboardPlusSpellingModels();
+		endOfService("[Keyboard+Spellin-> combined HMM model]");
+		break;*/
 
 		//case 'T': case 't'://
 		//	cout << "[Test typing a 20-words random message]:" << endl;
@@ -279,18 +280,37 @@ void main()
 		//	endOfService("[Type a 20-words random message]");
 		//	break;
 
-		//case 'A': case 'a'://
-		//	cout << endl << "[Now typing the whole Biola vision article into]:" << endl;
-		//	cout << "[_1_CorruptedBiolaVision1.txt]" << endl;
-		//	typeOneArticle("1_CorruptedBiolaVision.txt", "BiolaVision.txt");
+		case 'A': case 'a':
+		{
+			displayParametersKbModel();
+			displayParametersSpellingModel();
 
-		//	cout << endl << "[Now typing the whole Biola vision article into]:" << endl;
-		//	cout << "[_2_CorruptedBiolaVision1.txt]" << endl;
-		//	typeOneArticle("2_CorruptedBiolaVision.txt", "BiolaVision.txt", true);
+			char charToType;
+			cout << endl << "Now give me a character to type for 10 times:";
+			cin >> charToType;
 
-		//	endOfService("[Test typing the whole Biola vision article twice]");
-		//	break;
+			for (int i = 0; i < 10; i++)
+			{
+				cout << endl << "[" << i + 1 << "]: get \"" << typeOneChar(charToType)
+					<< "\" while trying to type \"" << charToType << "\"" << endl << endl << endl;
+			}
 
+			char word[21];
+			char output[101];
+
+			cout << endl << "Now give me a word (upto 20 characters) to type (10 times):";
+			cin >> word;
+
+			for (int i = 0; i < 10; i++)
+			{
+				typeOneWord(word, output, true);
+				cout << endl << "[" << i + 1 << "]: get \"" << output
+					<< "\" while trying to type \"" << word << "\"" << endl << endl << endl;
+			}
+
+		}
+		endOfService("[Simulation of typing behavior.]");
+		break;
 		//case 'W': case 'w'://
 		//	cout << "[Test automatic recognition of character strings as words]:" << endl;
 		//	repetitiveAutomaticCorrectionOfSingleWord();

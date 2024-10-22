@@ -1,0 +1,75 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\minic\\OneDrive\\Documents\\GitHub\\HMM\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{81DC6518-CA92-41A8-BB31-8D556E9A484A}|myProgram\\myProgram.vcxproj|C:\\Users\\minic\\OneDrive\\Documents\\GitHub\\HMM\\myProgram\\demo.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{81DC6518-CA92-41A8-BB31-8D556E9A484A}|myProgram\\myProgram.vcxproj|solutionrelative:myProgram\\demo.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{81DC6518-CA92-41A8-BB31-8D556E9A484A}|myProgram\\myProgram.vcxproj|C:\\Users\\minic\\OneDrive\\Documents\\GitHub\\HMM\\myProgram\\models.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{81DC6518-CA92-41A8-BB31-8D556E9A484A}|myProgram\\myProgram.vcxproj|solutionrelative:myProgram\\models.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{81DC6518-CA92-41A8-BB31-8D556E9A484A}|myProgram\\myProgram.vcxproj|C:\\Users\\minic\\OneDrive\\Documents\\GitHub\\HMM\\myProgram\\models.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{81DC6518-CA92-41A8-BB31-8D556E9A484A}|myProgram\\myProgram.vcxproj|solutionrelative:myProgram\\models.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "models.h",
+              "DocumentMoniker": "C:\\Users\\minic\\OneDrive\\Documents\\GitHub\\HMM\\myProgram\\models.h",
+              "RelativeDocumentMoniker": "myProgram\\models.h",
+              "ToolTip": "C:\\Users\\minic\\OneDrive\\Documents\\GitHub\\HMM\\myProgram\\models.h",
+              "RelativeToolTip": "myProgram\\models.h",
+              "ViewState": "AgIAACkAAAAAAAAAAAAgwGUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-10-22T02:39:43.662Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "demo.cpp",
+              "DocumentMoniker": "C:\\Users\\minic\\OneDrive\\Documents\\GitHub\\HMM\\myProgram\\demo.cpp",
+              "RelativeDocumentMoniker": "myProgram\\demo.cpp",
+              "ToolTip": "C:\\Users\\minic\\OneDrive\\Documents\\GitHub\\HMM\\myProgram\\demo.cpp",
+              "RelativeToolTip": "myProgram\\demo.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADEBAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-10-21T04:34:22.818Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "models.cpp",
+              "DocumentMoniker": "C:\\Users\\minic\\OneDrive\\Documents\\GitHub\\HMM\\myProgram\\models.cpp",
+              "RelativeDocumentMoniker": "myProgram\\models.cpp",
+              "ToolTip": "C:\\Users\\minic\\OneDrive\\Documents\\GitHub\\HMM\\myProgram\\models.cpp",
+              "RelativeToolTip": "myProgram\\models.cpp",
+              "ViewState": "AgIAAFQBAAAAAAAAAAAAAIsBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-10-21T04:23:33.13Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
